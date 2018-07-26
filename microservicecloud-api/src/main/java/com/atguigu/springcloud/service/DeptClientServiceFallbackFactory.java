@@ -8,6 +8,11 @@ import com.atguigu.springcloud.entities.Dept;
 
 import feign.hystrix.FallbackFactory;
 
+/**
+ * 这里是针对客户端的
+ * 为了把Hystrix从方法中解耦，而添加的factory
+ * 吧所有的接口的熔断机制全部放在这里处理，
+ */
 @Component // 不要忘记添加，不要忘记添加
 public class DeptClientServiceFallbackFactory implements FallbackFactory<DeptClientService>
 {

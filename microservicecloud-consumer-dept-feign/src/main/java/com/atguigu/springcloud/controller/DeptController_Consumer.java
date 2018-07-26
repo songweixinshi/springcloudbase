@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.atguigu.springcloud.entities.Dept;
 import com.atguigu.springcloud.service.DeptClientService;
 
+/**
+ * 改为controller调用api-service接口
+ */
 @RestController
 public class DeptController_Consumer
 {

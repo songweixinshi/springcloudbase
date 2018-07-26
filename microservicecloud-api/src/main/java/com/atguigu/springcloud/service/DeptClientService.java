@@ -17,6 +17,7 @@ import com.atguigu.springcloud.entities.Dept;
 新建
 
 一个实现了FallbackFactory接口的类DeptClientServiceFallbackFactory
+作用在value这个微服务接口身上的接口
  * @author zzyy
  * @date 2018年4月21日
  */

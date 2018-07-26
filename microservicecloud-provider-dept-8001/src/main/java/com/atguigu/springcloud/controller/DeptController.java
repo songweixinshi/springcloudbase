@@ -40,7 +40,10 @@ public class DeptController
 		return service.list();
 	}
 
-	
+	/**
+	 * 服务发现，不是重点，只是服务信息展示
+	 * @return
+	 */
 //	@Autowired
 //	private DiscoveryClient client;
 	@RequestMapping(value = "/dept/discovery", method = RequestMethod.GET)

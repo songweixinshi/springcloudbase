@@ -25,12 +25,19 @@ public class DeptController
 		Dept dept = this.service.get(id);
 		
 		if (null == dept) {
+			//跑出异常会被hystrix返回
 			throw new RuntimeException("该ID：" + id + "没有没有对应的信息");
 		}
 		
 		return dept;
 	}
 
+	/**
+	 * 同样返回一个dept，但是是自拟的带标记的对象，方便前端工程师判断
+	 * 返回一个符合预期的可处理的备选相应
+	 * @param id
+	 * @return
+	 */
 	public Dept processHystrix_Get(@PathVariable("id") Long id)
 	{
 		return new Dept().setDeptno(id).setDname("该ID：" + id + "没有没有对应的信息,null--@HystrixCommand")

@@ -68,10 +68,10 @@
 	</dependencyManagement>
 
 	<build>
-		<finalName>microservicecloud</finalName>
+		<finalName>microservicecloud</finalName><!--父工程名字-->
 		<resources>
 			<resource>
-				<directory>src/main/resources</directory>
+				<directory>src/main/resources</directory><!--配置文件路径，yml配置文件-->
 				<filtering>true</filtering>
 			</resource>
 		</resources>
@@ -81,7 +81,7 @@
 				<artifactId>maven-resources-plugin</artifactId>
 				<configuration>
 					<delimiters>
-						<delimit>$</delimit>
+						<delimit>$</delimit><!--$开头 $结尾之间的内容就是构建内容，灵活配置的参数内容-->
 					</delimiters>
 				</configuration>
 			</plugin>

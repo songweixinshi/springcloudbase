@@ -78,7 +78,7 @@ public class RandomRule_ZY extends AbstractLoadBalancerRule
 
 			// Shouldn't actually happen.. but must be transient or a bug.
 			server = null;
-			Thread.yield();
+			Thread.yield();//让步，执行状态转就绪状态，有可能下个循环可调到，以此实现随机
 		}
 
 		return server;
