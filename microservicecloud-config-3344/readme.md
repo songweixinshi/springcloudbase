@@ -1,0 +1,9 @@
+本地配置host，localhost对应config-3344.com
+<br>url：config-3344.com:3344/application-dev.yml
+得到dev环境配置信息<br>
+访问：config-3344.com:3344/application-test.yml
+<br>得到test环境配置<br>
+输入其他，只能得到其他无关内容<br>
+写法和访问方式<br>
+xxx/application/dev/master得到配置的json串<br>
+xxx/master/application-dev.yml与application-dev.yml结果一样<br>

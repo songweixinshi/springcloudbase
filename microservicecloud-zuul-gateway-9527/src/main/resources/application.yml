@@ -16,11 +16,11 @@ eureka:
  
 zuul: 
   #ignored-services: microservicecloud-dept
-  prefix: /atguigu
+  prefix: /atguigu   #统一前缀
   ignored-services: "*"
   routes: 
-    mydept.serviceId: microservicecloud-dept
-    mydept.path: /mydept/**
+    mydept.serviceId: microservicecloud-dept #别名对应服务名称
+    mydept.path: /mydept/**  #别名
  
 info:
   app.name: atguigu-microcloud
